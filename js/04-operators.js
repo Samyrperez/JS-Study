@@ -44,3 +44,44 @@ console.log(a !== "6")//Distinto a nivel de Identidad(En este caso true)
 console.log(0 == false)
 console.log(1 == false)
 console.log(undefined == null)
+
+
+//Truthy values (valores verdaderos)
+
+//Todos los numeros positivos y negativos menos el cero
+//Todas las cadenas de texto menos las vacias
+//Todos los boolean
+
+// Falsy values (valores falsos)
+
+/* 0 , 0n , null, undefined, NaN, boolean false, cadenas de texto vacias.*/
+
+
+
+//Operadores logicos  => NOs valen para comparar valores que en realidad tienen un valor booleanos, osea si es verdadero o falso.
+
+//and (&&): las dos expresiones deben ser verdaderas para que el resultado sea true, si al menos una de las expresiones es falsa el resultado sera false.
+console.log(5 > 10  && 15 > 20)//false
+console.log(5 < 10  && 15 < 20)//true
+console.log(5 < 10  && 15 > 20)//false
+console.log(5 > 10  && 15 > 20)//false
+console.log(5 > 10  && 15 > 20 && 30> 40)//false
+
+//or (||) : Si se cumple minimo una de las comparaciones será verdadero
+console.log(5 > 10  || 15 > 20)//false
+console.log(5 < 10  || 15 < 20)//true
+console.log(5 < 10  || 15 > 20)//true
+
+console.log(5 > 10  && 15 > 20 || 30 < 40)//true: debido a que la comparación del and es false pero la del or es verdadera.
+
+//not (!) : Niego el valor actual y lo invierto, si es falso sera verdadero y viceversa
+console.log(!true)
+console.log(!false)
+console.log(!(5 > 10  && 15 > 20))//false
+console.log(!(5 > 10  || 15 > 20))//false
+
+
+//Operadores ternarios: Permiten escrbir una condición, otra forma de escribir condicionales
+const isRaining = true
+//Se hace la pregunta despues del ? si es true imprimira o se ejecutará el codigo antes de los dos puntos. Si no se ejecuta lo que etsá despues de los dos puntos.
+isRaining ? console.log("Está lloviendo") : console.log ("No está lloviendo")  

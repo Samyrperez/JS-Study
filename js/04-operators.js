@@ -84,4 +84,4 @@ console.log(!(5 > 10  || 15 > 20))//false
 //Operadores ternarios: Permiten escrbir una condición, otra forma de escribir condicionales
 const isRaining = true
 //Se hace la pregunta despues del ? si es true imprimira o se ejecutará el codigo antes de los dos puntos. Si no se ejecuta lo que etsá despues de los dos puntos.
-isRaining ? console.log("Está lloviendo") : console.log ("No está lloviendo")  
+isRaining ? console.log("Está lloviendo") : console.log ("No está lloviendo") 

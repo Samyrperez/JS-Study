@@ -57,10 +57,15 @@ console.log(myConst !== myConst_2 && numb2 == numb3)//false
 console.log(myConst == myConst_2 || numb2 == numb3)//true
 console.log(myConst !== myConst_2 || numb2 !== myConst)//false
 //7. Combina ambos operadores logicos.
-
+console.log((myConst === myConst_2 || numb2 === myConst_2) && (myConst === myConst_2 || numb2 === myConst_2));
 
 //8. Añade alguna negación
+console.log(!(myConst === myConst_2 || numb2 === myConst_2) && (myConst === myConst_2 || numb2 === myConst_2));
 
 //9. Utiliza el operador ternario.
+const esMayordeEdad = true
+const esHombre = false
+esMayordeEdad ? console.log("Si es mayor de edad") : console.log("No es mayor de edad")
+esHombre ? console.log("Es hombre") : console.log("No es hombre")
 
 //.Combina operadores operadores aritmeticos, de comparación y logicos.

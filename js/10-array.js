@@ -88,6 +88,8 @@ console.log(myNewArray)
 
 //splice: Elimina los elementos pero dentor del rango que le establezcamos
 
+myArray.splice(1,3)//Elimina 3 elementos desde el indice 1
+console.log(myArray)//Ya no imprimira (1, "Programación", 31 ,"Samyr") ahora solo imprimirá (1)
 
 
 

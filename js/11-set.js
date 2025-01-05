@@ -1,4 +1,5 @@
 // Continuación estructuras
+// Estructura de datos #2
 // Set :  Es una estructura de datos que almacena valores únicos de cualquier tipo, ya sean primitivos u objetos.
 // Aunque es un listado no teemos acceso a los indices, solo a sus valores
 

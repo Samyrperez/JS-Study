@@ -20,7 +20,7 @@ console.log(mySet)
 mySet.add("Samyr Peréz")// add para añadir al final
 console.log(mySet)
 
-mySet.delete("Samyr Peréz")// Para borrar dbo indicarle el valor del elemento a borrar
+mySet.delete("Samyr Peréz")// Para borrar debo indicarle el valor del elemento a borrar
 console.log(mySet)
 
 console.log(mySet.delete("30"))// retorna un true si el elemento que queremos borrar existe y ha sido borrado. y false si el eelemento no existe

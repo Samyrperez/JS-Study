@@ -66,8 +66,26 @@ myMap = new Map([
 mySet = new Set(["30", "PRogramación", "31" ,"Samyr", 50])
 
 for (let valor of myArray){
-    console.log("for of")
+    console.log(valor)
 }// imprimirá 1, 2, 3, 4
+
 for (let valor of myMap){
-    console.log("for of")
+    console.log(valor)
 }//
+
+for (let valor of mySet){
+    console.log(valor)
+}//
+
+// BUenas practicas
+
+// Uso del break y cuntinue
+
+for (let i = 0; i < 10; i++){
+    if (i == 5){
+        continue// El continue le dice que omita el 5 si se cumple
+    }else if (i == 7){//Esto nos sirve para controlar los flujos, y solo le dirar parar en este momento
+        break
+    }
+    console.log(`Hola ${i}`)
+};

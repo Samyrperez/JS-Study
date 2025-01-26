@@ -66,5 +66,43 @@ function multi(a, b){
 let result= multi(5, 10)
 console.log(result)
 
+// Funciones anidadas
 
-console.log("Hola mundo");
+function extern(){
+    console.log("funcion Externa")
+    function intern(){
+        console.log("Función Interna")
+    }
+    intern()
+}
+extern()
+// intern() Error: fuera del scope
+
+
+// Funciones de orden superior: Reciben otras funciones como argumentos
+
+function applyFunc(func, param){
+    func(param)
+}
+applyFunc(myFunc4,"Función de orden superior")
+
+// forEach: funcion que sirver para ejecutar bucles a funciones iterables
+
+myArray = [1, 2, 3, 4]
+// primera forma de usarlo
+myArray.forEach((value) => console.log(value))
+
+// segunda forma de usarlo
+
+myArray.forEach(function(value){
+    console.log(value)
+})
+
+myMap = new Map([
+    ["name", "Samyr"],
+    ["email", "Sam@gmail.com"],
+    ["age", 31]
+])
+mySet = new Set(["30", "PRogramación", "31" ,"Samyr", 50])
+mySet.forEach((value) => console.log(value))
+myMap.forEach((value) => console.log(value))
